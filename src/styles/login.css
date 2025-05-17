@@ -1,18 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500;600;700&display=swap');
 
+
 /* Root Variables */
 :root {
   --pixel-font: 'Pixelify Sans', normal, sans-serif;
 }
 
 .page-container {
-  min-height: 100vh;
+  height: 100%;
+  min-height: 94vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   background: linear-gradient(rgba(0, 0, 0, 0.195), rgba(0, 0, 0, 0.5)),
               url('../../src/assets/bg.png') center/cover no-repeat fixed;
-  padding: 15px;
+  padding: 15px
 }
 
 .main-title {
@@ -32,7 +34,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 15px;
+  /* padding: 15px; */
 }
 
 .login-card {
@@ -60,7 +62,7 @@
 .form-group {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 8px;  
   color: black;
 }
 
@@ -103,6 +105,14 @@
   transform: translateY(-2px);
 }
 
+.forget-pass{
+  text-align: center;
+  font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+  color: rgb(230, 230, 230);
+  font-weight: 100;
+  margin: 2px; /*Reduce the gap */
+}
+
 .divider {
   margin: 10px 0;
   text-align: center;
@@ -121,12 +131,29 @@
   color: black;
   border: none;
   border-radius: 12px;
-  font-size: 1rem;
+  font-size: 15px;
   cursor: pointer;
   transition: all 0.2s ease;
 }
 
 .google-button:hover {
+  background: #f8f9fa;
+  transform: translateY(-2px);
+}
+
+.new-user {
+  margin-top: 10px;
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+  color: white;
+}
+
+.new-user span{
+  cursor: pointer;
+  color: rgb(83, 229, 255);
+}
+
+.sign-in-button:hover {
   background: #f8f9fa;
   transform: translateY(-2px);
 }
